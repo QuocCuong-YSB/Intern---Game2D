@@ -58,18 +58,18 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
         //Adjustable jump height
-        if (Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
-            body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
+        if (Input.GetKeyUp(KeyCode.Space) && body.linearVelocity.y > 0)
+            body.linearVelocity = new Vector2(body.linearVelocity.x, body.linearVelocity.y / 2);
 
         if (onWall())
         {
             body.gravityScale = 0;
-            body.velocity = Vector2.zero;
+            body.linearVelocity = Vector2.zero;
         }
         else
         {
             body.gravityScale = 7;
-            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+            body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocity.y);
 
             if (isGrounded())
             {
@@ -93,17 +93,17 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             if (isGrounded())
-                body.velocity = new Vector2(body.velocity.x, jumpPower);
+                body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
             else
             {
                 //If not on the ground and coyote counter bigger than 0 do a normal jump
                 if (coyoteCounter > 0)
-                    body.velocity = new Vector2(body.velocity.x, jumpPower);
+                    body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
                 else
                 {
                     if (jumpCounter > 0) //If we have extra jumps then jump and decrease the jump counter
                     {
-                        body.velocity = new Vector2(body.velocity.x, jumpPower);
+                        body.linearVelocity = new Vector2(body.linearVelocity.x, jumpPower);
                         jumpCounter--;
                     }
                 }

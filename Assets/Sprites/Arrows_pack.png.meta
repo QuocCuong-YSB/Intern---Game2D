@@ -3,43 +3,43 @@ guid: a375bfb3aa3adc340a899968ef23b6c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4396870622444339024
+      213: 21300000
     second: Arrows_pack_0
   - first:
-      213: -8338238801746125624
+      213: 21300002
     second: Arrows_pack_1
   - first:
-      213: -4033704821452922563
+      213: 21300004
     second: Arrows_pack_2
   - first:
-      213: -8235653012269150192
+      213: 21300006
     second: Arrows_pack_3
   - first:
-      213: -8734471884891011358
+      213: 21300008
     second: Arrows_pack_4
   - first:
-      213: 2299762976014267228
+      213: 21300010
     second: Arrows_pack_5
   - first:
-      213: -1681180870942741966
+      213: 21300012
     second: Arrows_pack_6
   - first:
-      213: 7161065842277049063
+      213: 21300014
     second: Arrows_pack_7
   - first:
-      213: -6681217904058273412
+      213: 21300016
     second: Arrows_pack_8
   - first:
-      213: -1762234089068424233
+      213: 21300018
     second: Arrows_pack_9
   - first:
-      213: 458943349695503207
+      213: 21300020
     second: Arrows_pack_10
   - first:
-      213: 5151818306325336918
+      213: 21300022
     second: Arrows_pack_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -56,10 +56,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -97,9 +99,11 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -109,9 +113,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -121,10 +126,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -133,9 +139,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
     buildTarget: tvOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -145,10 +152,11 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -157,9 +165,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -169,9 +178,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -181,8 +191,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -197,12 +208,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 05f35261982d40d30800000000000000
-      internalID: 4396870622444339024
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -218,12 +230,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8cc1b89dcff984c80800000000000000
-      internalID: -8338238801746125624
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -239,12 +252,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: d31a48c16d66508c0800000000000000
-      internalID: -4033704821452922563
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -260,12 +274,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 010525e383515bd80800000000000000
-      internalID: -8235653012269150192
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -281,12 +296,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2e64f60191ce8c680800000000000000
-      internalID: -8734471884891011358
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -302,12 +318,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c53fce4fd366aef10800000000000000
-      internalID: 2299762976014267228
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -323,12 +340,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 23aa648b7ee3ba8e0800000000000000
-      internalID: -1681180870942741966
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -344,12 +362,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7e26b1e4177316360800000000000000
-      internalID: 7161065842277049063
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -365,12 +384,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c7170a107bb8743a0800000000000000
-      internalID: -6681217904058273412
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -386,12 +406,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7d31ef5ce694b87e0800000000000000
-      internalID: -1762234089068424233
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -407,12 +428,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 76bd0a28b8e7e5600800000000000000
-      internalID: 458943349695503207
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -428,17 +450,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 65350ef347fee7740800000000000000
-      internalID: 5151818306325336918
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -448,9 +472,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Arrows_pack_0: 21300000
+      Arrows_pack_1: 21300002
+      Arrows_pack_10: 21300020
+      Arrows_pack_11: 21300022
+      Arrows_pack_2: 21300004
+      Arrows_pack_3: 21300006
+      Arrows_pack_4: 21300008
+      Arrows_pack_5: 21300010
+      Arrows_pack_6: 21300012
+      Arrows_pack_7: 21300014
+      Arrows_pack_8: 21300016
+      Arrows_pack_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
