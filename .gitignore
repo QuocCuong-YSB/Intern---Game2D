@@ -1,0 +1,68 @@
+# ============================
+# Unity generated
+# ============================
+Library/
+Temp/
+Logs/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+*.user
+*.userprefs
+*.unityproj
+*.pidb
+*.booproj
+*.svd
+*.csproj
+*.sln
+*.suo
+*.sdf
+*.cache
+*.orig
+*.log
+*.tlb
+*.tlf
+*.vtg
+*.ds_store
+*.code-workspace
+.vscode
+
+# ============================
+# Visual Studio / VS Code
+# ============================
+.vs/
+*.sln.docstates
+
+# ============================
+# Intellisense / ReSharper
+# ============================
+*.resharper
+*.resharper.user
+*.resharper.metadata
+*.DotSettings.user
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# ============================
+# Rider
+# ============================
+.idea/
+*.sln.iml
+
+# ============================
+# OS files
+# ============================
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ============================
+# Unity User Settings (personal)
+# ============================
+UserSettings/
+
+# ============================
+# Asset Store tools
+# ============================
+Assets/AssetStoreTools*

@@ -3,15 +3,26 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    [Header ("Game Over")]
+    public static UIManager instance { get; private set; }
+
+    [Header("Game Over")]
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private AudioClip gameOverSound;
 
     [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
 
+    [Header("Score")]
+    [SerializeField] private TMPro.TextMeshProUGUI scoreText;
+    [SerializeField] private TMPro.TextMeshProUGUI highScoreText;
+
     private void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
     }
@@ -19,38 +30,53 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //If pause screen already active unpause and viceversa
             PauseGame(!pauseScreen.activeInHierarchy);
+        }
+
+        UpdateScoreUI();
+    }
+
+    private void UpdateScoreUI()
+    {
+        if (DinoGameManager.instance == null) return;
+
+        if (scoreText != null)
+        {
+            scoreText.text = Mathf.FloorToInt(DinoGameManager.instance.score).ToString();
+        }
+        if (highScoreText != null)
+        {
+            highScoreText.text = "HI " + Mathf.FloorToInt(DinoGameManager.instance.highScore).ToString();
         }
     }
 
     #region Game Over
-    //Activate game over screen
     public void GameOver()
     {
         gameOverScreen.SetActive(true);
         SoundManager.instance.PlaySound(gameOverSound);
     }
 
-    //Restart level
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+        if (DinoGameManager.instance != null)
+            DinoGameManager.instance.Restart();
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //Main Menu
     public void MainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
-    //Quit game/exit play mode if in Editor
     public void Quit()
     {
-        Application.Quit(); //Quits the game (only works in build)
-
+        Application.Quit();
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; //Exits play mode (will only be executed in the editor)
+        UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
     #endregion
@@ -58,11 +84,7 @@ public class UIManager : MonoBehaviour
     #region Pause
     public void PauseGame(bool status)
     {
-        //If status == true pause | if status == false unpause
         pauseScreen.SetActive(status);
-
-        //When pause status is true change timescale to 0 (time stops)
-        //when it's false change it back to 1 (time goes by normally)
         if (status)
             Time.timeScale = 0;
         else

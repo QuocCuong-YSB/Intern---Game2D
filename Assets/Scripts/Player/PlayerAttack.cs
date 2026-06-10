@@ -19,6 +19,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
+        if (!DinoGameManager.instance.isPlaying) return;
+
         if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack()
             && Time.timeScale > 0)
             Attack();
@@ -32,8 +34,10 @@ public class PlayerAttack : MonoBehaviour
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 
-        fireballs[FindFireball()].transform.position = firePoint.position;
-        fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        // Shoot towards the right (auto-run direction)
+        int index = FindFireball();
+        fireballs[index].transform.position = firePoint.position;
+        fireballs[index].GetComponent<Projectile>().SetDirection(1f);
     }
     private int FindFireball()
     {

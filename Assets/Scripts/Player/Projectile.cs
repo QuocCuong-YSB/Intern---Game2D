@@ -33,6 +33,13 @@ public class Projectile : MonoBehaviour
 
         if (collision.tag == "Enemy")
             collision.GetComponent<Health>()?.TakeDamage(1);
+
+        if (collision.CompareTag("Obstacle"))
+        {
+            Obstacle obstacle = collision.GetComponent<Obstacle>();
+            if (obstacle != null)
+                obstacle.TakeDamage(1);
+        }
     }
     public void SetDirection(float _direction)
     {

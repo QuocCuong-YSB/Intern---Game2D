@@ -2,11 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Ground
   - Enemy
   - Checkpoint
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Wall
   - Player
   - Enemy
-  - 
+  - Obstacle
   - 
   - 
   - 
@@ -56,3 +57,5 @@ TagManager:
   - name: Ground
     uniqueID: 2649148703
     locked: 0
+  m_RenderingLayers:
+  - Default
